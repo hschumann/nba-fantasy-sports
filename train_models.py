@@ -32,8 +32,9 @@ def main(plot_histograms=False):
 
 	# first let's start by reading in the data we want
 	player_game_data = data_handling.get_player_game_data()
+	team_game_data = data_handling.get_team_game_data()
 
-	print(player_game_data.head())  # this prints the first 6 lines of the dataframe
+	print(team_game_data[['year', 'month', 'day']].head())
 
 	if plot_histograms:
 		# make a histogram of the fantasy points on a game level for players
@@ -61,6 +62,12 @@ def main(plot_histograms=False):
 
 
 	# 4) Anything else you want to explore. (If #3 is too hard, I'm already having some trouble with it)
+
+
+	"""
+	Hans' Developments are below. 
+	"""
+
 
 
 
